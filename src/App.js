@@ -21,7 +21,7 @@ function App() {
   async function handleAdd(formInputs) {
 
     try {
-    const wish = await fetch('http://project4-wish.herokuapp.com/wishes', {
+    const wish = await fetch('https://project4-wish.herokuapp.com/wishes', {
       method: 'POST',
       headers: {
         'Content-type': 'Application/json'
@@ -48,7 +48,7 @@ function App() {
 
   async function handleUpdate(formInputs) {
     try {
-      await fetch(`http://project4-wish.herokuapp.com/wishes/${formInputs.id}`, {
+      await fetch(`https://project4-wish.herokuapp.com/wishes/${formInputs.id}`, {
         method: 'PUT',
         headers: {
           'Content-type': 'Application/json'
